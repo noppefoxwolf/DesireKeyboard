@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DesireKeyboardView" customModule="DesireKeyboard" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="dVH-KU-aA0" id="aLY-6a-Vn0"/>
+                <outlet property="keysView" destination="8Gk-h8-J2v" id="kRD-u9-d5A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1000" height="520"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Gk-h8-J2v" customClass="DesireKeyboardKeysView" customModule="DesireKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="20" y="86" width="960" height="414"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8Gk-h8-J2v" secondAttribute="height" multiplier="58:25" id="SOl-Ka-bwZ"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dVH-KU-aA0">
+                    <rect key="frame" x="0.0" y="0.0" width="1000" height="66"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bm1-tZ-4jr">
+                        <size key="itemSize" width="80" height="40"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8Gk-h8-J2v" firstAttribute="top" secondItem="dVH-KU-aA0" secondAttribute="bottom" constant="20" id="40v-OM-Yn9"/>
+                <constraint firstAttribute="bottom" secondItem="8Gk-h8-J2v" secondAttribute="bottom" constant="20" id="9Ox-U5-ChL"/>
+                <constraint firstItem="dVH-KU-aA0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CZU-Ou-pye"/>
+                <constraint firstAttribute="trailing" secondItem="dVH-KU-aA0" secondAttribute="trailing" id="YDh-Wy-X8a"/>
+                <constraint firstItem="dVH-KU-aA0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mxn-Hr-O44"/>
+                <constraint firstItem="8Gk-h8-J2v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="q0L-hq-0dW"/>
+                <constraint firstAttribute="trailing" secondItem="8Gk-h8-J2v" secondAttribute="trailing" constant="20" id="zYX-eN-e66"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="518" y="225"/>
+        </view>
+    </objects>
+</document>
