@@ -4,4 +4,4 @@
 
 ![](https://raw.githubusercontent.com/noppefoxwolf/DesireKeyboard/master/sample.gif)
 
-inspired by PS4 motion keyboard.
+inspired to PS4 motion keyboard.
